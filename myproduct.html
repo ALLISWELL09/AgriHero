@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>AgriHero</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo.png" alt="AgriHero">
+        <!-- <h1 class="sitename">AgriHero</h1>  -->
+      </a>
+
+      <nav id="navmenu" class="navmenu" >
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li class="dropdown"><a href="#"><span>My Services </span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">My Products</a></li>
+              <!-- <li class="dropdown"><a href="#"><span>Sell</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Direct Sell</a></li>
+                  <li><a href="#">Auction</a></li>
+                  <li><a href="#">Forward Contract</a></li>
+                  <li><a href="#">Spot Market</a></li>
+                </ul>
+              </li> -->
+              <li><a href="orders.html">Orders</a></li>
+              <li><a href="#">Sample Request</a></li>
+              <li><a href="#">Payment history</a></li>
+              <li><a href="#">Chat</a></li>
+              
+            </ul>
+          </li>
+          <li><a href="blog.html">Schemes</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <!-- <li><a href="services.html">Our Services</a></li> -->
+          <!-- <li><a href="testimonials.html">Testimonials</a></li> -->
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="farmer_profile.html">Profile</a></li>
+          <li><a href="#"><button type="button" class="btn btn-success">Logout</button></a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+    <form class="container mt-5">
+      <a href="showProduct.html"><span class="btn btn-warning"  style="float: right;">Show Product</span></a>
+      <h2 class="text-center mb-4">Farm Product and Cultivation Details Submission Form</h2>
+      <!-- Product Name -->
+      <div class="mb-3">
+        <label for="productName" class="form-label">Product Name</label>
+        <input type="text" class="form-control" id="productName" name="productName" placeholder="Enter the product name (e.g., Wheat, Rice)" required>
+      </div>
+      <div class="mb-3">
+        <label for="productimg" class="form-label">Product Image</label>
+        <input type="file" class="form-control" id="productimg" name="productimg" placeholder="Enter the product image" required>
+      </div>
+    
+      <!-- Product Type -->
+      <div class="mb-3">
+        <label for="productType" class="form-label">Product Type</label>
+        <select class="form-select" id="productType" name="productType" required>
+          <option value="" disabled selected>Select Product Type</option>
+          <option value="Grains">Grains (e.g., Wheat, Rice, Maize)</option>
+          <option value="Fruits">Fruits (e.g., Mango, Banana, Apple)</option>
+          <option value="Vegetables">Vegetables (e.g., Potatoes, Tomatoes, Carrots)</option>
+          <option value="Oilseeds">Oilseeds (e.g., Sunflower, Soybean, Groundnut)</option>
+          <option value="Spices">Spices (e.g., Turmeric, Pepper, Cardamom)</option>
+          <option value="Pulses">Pulses (e.g., Lentils, Chickpeas)</option>
+          <option value="Other">Other (Specify below)</option>
+        </select>
+      </div>
+      
+      <div class="mb-3">
+        <label for="productName" class="form-label">Product Price(Per Quintal)</label>
+        <input type="text" class="form-control" id="productName" name="productName" placeholder="Enter the product price (1 Quintal = 100kg)" required>
+      </div>
+  
+      <div class="mb-3">
+        <label for="productName" class="form-label">Product Stock</label>
+        <input type="text" class="form-control" id="productName" name="productName" placeholder="Enter the product stock" required>
+      </div>
+    
+      <!-- Farming Area (In Acres or Hectares) -->
+      <div class="mb-3">
+        <label for="farmingArea" class="form-label">Farming Area (in acres or hectares)</label>
+        <input type="number" class="form-control" id="farmingArea" name="farmingArea" placeholder="Enter the farming area" required>
+      </div>
+    
+      <!-- Nutritional Certification -->
+      <div class="mb-3">
+        <label for="nutritionalCertificate" class="form-label">Nutritional Certification</label>
+        <input type="text" class="form-control" id="nutritionalCertificate" name="nutritionalCertificate" placeholder="Enter certification details (if any)">
+      </div>
+    
+      <!-- Farming Technique -->
+      <div class="mb-3">
+        <label for="farmingTechnique" class="form-label">Farming Technique</label>
+        <select class="form-select" id="farmingTechnique" name="farmingTechnique" required>
+          <option value="" disabled selected>Select Farming Technique</option>
+          <option value="Organic Farming">Organic Farming</option>
+          <option value="Conventional Farming">Conventional Farming</option>
+          <option value="Hydroponics">Hydroponics</option>
+          <option value="Aquaponics">Aquaponics</option>
+          <option value="Permaculture">Permaculture</option>
+          <option value="Agroforestry">Agroforestry</option>
+          <option value="Precision Agriculture">Precision Agriculture</option>
+          <option value="Vertical Farming">Vertical Farming</option>
+          <option value="Crop Rotation">Crop Rotation</option>
+          <option value="Conservation Tillage">Conservation Tillage</option>
+          <option value="Mixed Farming">Mixed Farming</option>
+          <option value="Sustainable Agriculture">Sustainable Agriculture</option>
+          <option value="Other">Other (Specify below)</option>
+        </select>
+      </div>
+    
+      <!-- Custom Farming Technique (if Other is selected) -->
+      <div class="mb-3" id="customTechniqueDiv" style="display:none;">
+        <label for="customFarmingTechnique" class="form-label">Specify Other Farming Technique</label>
+        <textarea class="form-control" id="customFarmingTechnique" name="customFarmingTechnique" rows="3" placeholder="Describe the custom farming technique"></textarea>
+      </div>
+    
+      <!-- Machinery Used -->
+      <div class="mb-3">
+        <label for="machineryUsed" class="form-label">Machinery Used</label>
+        <select class="form-select" id="machineryUsed" name="machineryUsed[]" multiple required>
+          <option value="Tractor">Tractor</option>
+          <option value="Plough">Plough</option>
+          <option value="Harvester">Harvester</option>
+          <option value="Seeder">Seeder</option>
+          <option value="Sprayer">Sprayer</option>
+          <option value="Combine Harvester">Combine Harvester</option>
+          <option value="Cultivator">Cultivator</option>
+          <option value="Baler">Baler</option>
+          <option value="Rotavator">Rotavator</option>
+          <option value="Threshing Machine">Threshing Machine</option>
+          <option value="Drip Irrigation System">Drip Irrigation System</option>
+          <option value="Irrigation Pump">Irrigation Pump</option>
+          <option value="Power Tiller">Power Tiller</option>
+          <option value="Rice Transplanter">Rice Transplanter</option>
+          <option value="Subsoiler">Subsoiler</option>
+          <option value="Mulcher">Mulcher</option>
+        </select>
+        <small class="form-text text-muted">Hold Ctrl (Windows) or Command (Mac) to select multiple machinery.</small>
+      </div>
+    
+      <!-- Fertilizers Used -->
+      <div class="mb-3">
+        <label for="fertilizerUsed" class="form-label">Fertilizers Used</label>
+        <select class="form-select" id="fertilizerUsed" name="fertilizerUsed[]" multiple required>
+          <option value="Urea (Chemical)">Urea (Chemical)</option>
+          <option value="Ammonium Nitrate (Chemical)">Ammonium Nitrate (Chemical)</option>
+          <option value="Potash (Chemical)">Potash (Chemical)</option>
+          <option value="Phosphate Fertilizer (Chemical)">Phosphate Fertilizer (Chemical)</option>
+          <option value="DAP (Chemical)">DAP (Diammonium Phosphate) (Chemical)</option>
+          <option value="Compost (Organic)">Compost (Organic)</option>
+          <option value="Vermicompost (Organic)">Vermicompost (Organic)</option>
+          <option value="Bone Meal (Organic)">Bone Meal (Organic)</option>
+          <option value="Green Manure (Organic)">Green Manure (Organic)</option>
+          <option value="Cow Manure (Organic)">Cow Manure (Organic)</option>
+          <option value="Fish Emulsion (Organic)">Fish Emulsion (Organic)</option>
+          <option value="Bio-fertilizer (Organic)">Bio-fertilizer (Organic)</option>
+          <option value="Poultry Litter (Organic)">Poultry Litter (Organic)</option>
+        </select>
+        <small class="form-text text-muted">Hold Ctrl (Windows) or Command (Mac) to select multiple fertilizers.</small>
+      </div>
+    
+      <!-- Area (Location) Details -->
+      <div class="mb-3">
+        <label for="farmingAreaLocation" class="form-label">Farming Area Location</label>
+        <input type="text" class="form-control" id="farmingAreaLocation" name="farmingAreaLocation" placeholder="Enter the location of the farming area (e.g., Village/City, District, State)" required>
+      </div>
+    
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form><br>
+    </div>
+    <script>
+  
+    
+      document.getElementById('farmingTechnique').addEventListener('change', function() {
+  const customDiv = document.getElementById('customTechniqueDiv');
+  if (this.value === 'Other') {
+    customDiv.style.display = 'block';
+  } else {
+    customDiv.style.display = 'none';
+  }
+      });
+    </script>
+    
+    
+  
+    
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">AgriHero</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>Q45M+W3V</p>
+              <p>nr. Sir BPTI Campus, <br>Vidhyanagar, Bhavnagar, Gujarat 364002</p>
+              <p class="mt-3"><strong>Phone:</strong> <span>0278 252 5354</span></p>
+              <p><strong>Email:</strong> <span>info@example.com</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Auction</a></li>
+              <li><a href="#">Chat</a></li>
+              <li><a href="#">My Products</a></li>
+              <li><a href="#">Sample Request</a></li>
+              <li><a href="#">Market Place</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 footer-links">
+            <div>
+              <h4>© Copyright <strong><span>AgriHero</span></strong>. All Rights Reserved</h4>
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
+
+    
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
